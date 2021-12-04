@@ -2,18 +2,23 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    // 這可以對 `this` 上的數據 property 進行更嚴格的推斷"
     "strict": true,
+    // 是否生成聲明文件
+    "declaration": true,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "jest"
     ],
     "paths": {
       "@/*": [
